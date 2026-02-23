@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid grid-cols-2">
+        <div><img src="./img/hero-3-cover.png" alt="" class="w-full h-full"></div>
+        <div>
+            <div class="bg-white w-[390px] min-h-screen relative flex items-center ml-15">
+    <!-- Form Container -->
+    <div class="bg-white px-6 pt-6 pb-10 relative">
+
+      <!-- Decorative circle top center -->
+      <div class="absolute top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-amber-200 opacity-80"></div>
+
+      <!-- Decorative circle right of title -->
+      <div class="absolute top-28 right-6 w-8 h-8 rounded-full border-2 border-amber-300 bg-transparent"></div>
+
+      <!-- Logo -->
+      <div class="mt-8 mb-5 flex items-center gap-2">
+        <!-- Logo mark -->
+        <div class="flex">
+          <div class="w-5 h-10 bg-[#1a2e5a]"></div>
+          <div class="w-5 h-10 bg-[#f5a623] flex items-center justify-center ml-0.5">
+            <div class="w-4 h-4 rounded-full border-2 border-white flex items-center justify-center">
+              <div class="w-2 h-2 rounded-full bg-white"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-1">
+          <p class="text-[10px] font-bold text-[#1a2e5a] leading-tight tracking-widest">THE</p>
+          <p class="text-[10px] font-bold text-[#1a2e5a] leading-tight tracking-widest">BRITISH</p>
+          <p class="text-[10px] font-bold text-[#1a2e5a] leading-tight tracking-widest">SCHOOL</p>
+          <p class="text-[8px] text-gray-400 tracking-widest">JAKARTA</p>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-2xl font-bold text-[#2d3748] mb-1">Registration Form</h1>
+      <p class="text-xs text-gray-500 mb-6">
+        Already have an account? 
+        <a href="#" class="text-amber-500 font-semibold">Login</a>
+      </p>
+
+      <!-- Form -->
+      <div class="space-y-3">
+
+        <!-- First & Last Name Row -->
+        <div class="flex gap-3">
+          <input type="text" placeholder="First Name *"
+            class="flex-1 border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-500 placeholder-gray-400 outline-none focus:border-amber-400">
+          <input type="text" placeholder="Last Name *"
+            class="flex-1 border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-500 placeholder-gray-400 outline-none focus:border-amber-400">
+        </div>
+
+        <!-- Email -->
+        <input type="email" placeholder="Enter Email *"
+          class="w-full border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-500 placeholder-gray-400 outline-none focus:border-amber-400">
+
+        <!-- Confirm Email -->
+        <input type="email" placeholder="Confirm Email *"
+          class="w-full border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-500 placeholder-gray-400 outline-none focus:border-amber-400">
+
+        <!-- Phone & Token Row -->
+        <div class="flex gap-3">
+          <input type="tel" placeholder="Phone Number *"
+            class="flex-1 border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-500 placeholder-gray-400 outline-none focus:border-amber-400">
+          <input type="text" placeholder="Token *"
+            class="flex-1 border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-500 placeholder-gray-400 outline-none focus:border-amber-400">
+        </div>
+
+        <!-- Gender & Department Row -->
+        <div class="flex items-center gap-3">
+          <!-- Gender checkboxes -->
+          <div class="flex items-center gap-3 flex-1">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" class="w-3.5 h-3.5 border-gray-300 accent-amber-500">
+              <span class="text-xs text-gray-600">Male</span>
+            </label>
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" class="w-3.5 h-3.5 border-gray-300 accent-amber-500">
+              <span class="text-xs text-gray-600">Female</span>
+            </label>
+          </div>
+          <!-- Department dropdown -->
+          <select class="flex-1 border border-gray-200 rounded-lg px-3 py-3 text-xs text-gray-400 outline-none focus:border-amber-400 bg-white appearance-none cursor-pointer"
+            style="background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%239ca3af\' stroke-width=\'2\'%3e%3cpolyline points=\'6,9 12,15 18,9\'/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 10px center; background-size: 14px;">
+            <option value="" disabled selected>Department</option>
+            <option>Primary</option>
+            <option>Secondary</option>
+            <option>Administration</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Register Button -->
+      <div class="mt-10 flex justify-center">
+        <button class="flex items-center gap-2 bg-gradient-to-r from-teal-300 via-amber-200 to-teal-300 text-[#2d3748] font-bold text-sm tracking-widest px-10 py-3 rounded-full shadow-md hover:opacity-90 transition-opacity">
+          <!-- Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          REGISTER
+        </button>
+      </div>
+
+    </div>
+  </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
